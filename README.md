@@ -27,7 +27,7 @@ docker run -d -p 2000:2000 --name api_gcpf_tarea3 racarlosdavid/api_gcpf_tarea3
 
 # Creacion del cluster
 gcloud config set compute/zone us-central1-a 
-gcloud container clusters create cluster-k8s-conferencia --num-nodes=3
+gcloud container clusters create cluster-k8s-t3 --num-nodes=3
 
 # Deployment
 kubectl apply -f deployment.yml
